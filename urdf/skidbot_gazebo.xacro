@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <gazebo reference="base_link">
+     <material>Gazebo/Blue</material>
+  </gazebo>
+   <gazebo reference="bolt1_link">
+     <material>Gazebo/Black</material>
+  </gazebo>
+    <gazebo reference="bolt2_link">
+     <material>Gazebo/Black</material>
+  </gazebo>
+    <gazebo reference="bolt3_link">
+     <material>Gazebo/Black</material>
+  </gazebo>
+    <gazebo reference="bolt4_link">
+     <material>Gazebo/Black</material>
+  </gazebo>
+    <gazebo reference="middle_link">
+     <material>Gazebo/White</material>
+  </gazebo>
+    <gazebo reference="side1_link">
+     <material>Gazebo/White</material>
+  </gazebo>
+    <gazebo reference="side2_link">
+     <material>Gazebo/White</material>
+  </gazebo>
+  <gazebo reference="side3_link">
+     <material>Gazebo/White</material>
+  </gazebo>
+  <gazebo reference="side4_link">
+     <material>Gazebo/White</material>
+  </gazebo>
+<gazebo>
+<plugin name="gazebo_base_controller" filename="libgazebo_ros_skid_steer_drive.so">
+<updateRate>15.0</updateRate>
+<robotNamespace>/</robotNamespace>
+<leftFrontJoint>left_front_wheel_joint</leftFrontJoint>
+<rightFrontJoint>right_front_wheel_joint</rightFrontJoint>
+<leftRearJoint>left_back_wheel_joint</leftRearJoint>
+<rightRearJoint>right_back_wheel_joint</rightRearJoint>
+<wheelSeparation>0.358</wheelSeparation>
+<wheelDiameter>0.254</wheelDiameter>
+<robotBaseFrame>base_link</robotBaseFrame>
+<torque>8</torque>
+<commandTopic>cmd_vel</commandTopic>
+<broadcastTF>false</broadcastTF>
+</plugin>
+</gazebo>
+</robot>
