@@ -30,20 +30,20 @@
   <gazebo reference="side4_link">
      <material>Gazebo/White</material>
   </gazebo>
-<gazebo>
-<plugin name="gazebo_base_controller" filename="libgazebo_ros_skid_steer_drive.so">
-<updateRate>15.0</updateRate>
-<robotNamespace>/</robotNamespace>
-<leftFrontJoint>left_front_wheel_joint</leftFrontJoint>
-<rightFrontJoint>right_front_wheel_joint</rightFrontJoint>
-<leftRearJoint>left_back_wheel_joint</leftRearJoint>
-<rightRearJoint>right_back_wheel_joint</rightRearJoint>
-<wheelSeparation>0.358</wheelSeparation>
-<wheelDiameter>0.254</wheelDiameter>
-<robotBaseFrame>base_link</robotBaseFrame>
-<torque>8</torque>
-<commandTopic>cmd_vel</commandTopic>
-<broadcastTF>false</broadcastTF>
-</plugin>
-</gazebo>
+  <gazebo>
+    <plugin name="gazebo_base_controller" filename="libgazebo_ros_skid_steer_drive.so">
+		<updateRate>15.0</updateRate>
+		<robotNamespace>/</robotNamespace>
+		<leftFrontJoint>left_front_wheel_joint</leftFrontJoint>
+		<rightFrontJoint>right_front_wheel_joint</rightFrontJoint>
+		<leftRearJoint>left_back_wheel_joint</leftRearJoint>
+		<rightRearJoint>right_back_wheel_joint</rightRearJoint>
+		<wheelSeparation>0.358</wheelSeparation>
+		<wheelDiameter>0.254</wheelDiameter>
+		<robotBaseFrame>base_link</robotBaseFrame>
+		<torque>8</torque>
+		<commandTopic>cmd_vel</commandTopic>
+		<broadcastTF>false</broadcastTF>
+	</plugin>
+  </gazebo>
 </robot>
